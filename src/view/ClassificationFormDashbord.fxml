@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="584.0" prefWidth="941.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClassificationFormDashbord">
+   <children>
+      <ImageView fitHeight="584.0" fitWidth="297.0" layoutX="-2.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/pikrepo.jpg" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.24" />
+         </effect>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="69.0" layoutX="23.0" layoutY="34.0" opacity="0.73" stroke="BLACK" strokeType="INSIDE" width="251.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="407.0" layoutX="1.0" layoutY="137.0" opacity="0.58" stroke="BLACK" strokeType="INSIDE" width="344.0" />
+      <VBox layoutY="144.0" prefHeight="394.0" prefWidth="297.0">
+         <children>
+            <Button fx:id="btnAboutClassification" mnemonicParsing="false" onAction="#btnAboutClassification" prefHeight="74.0" prefWidth="296.0" style="-fx-background-color: null;" text="About Classification" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnFood" mnemonicParsing="false" onAction="#btnFood" prefHeight="74.0" prefWidth="296.0" style="-fx-background-color: null;" text="Food" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnKingdom" mnemonicParsing="false" onAction="#btnKingdom" prefHeight="74.0" prefWidth="296.0" style="-fx-background-color: null;" text="Kingdom" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnHabitat" mnemonicParsing="false" onAction="#btnHabitat" prefHeight="74.0" prefWidth="296.0" style="-fx-background-color: null;" text="Habitat" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnEndangered" mnemonicParsing="false" onAction="#btnEndangered" prefHeight="74.0" prefWidth="296.0" style="-fx-background-color: null;" text="Endangered" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Label layoutX="31.0" layoutY="39.0" prefHeight="55.0" prefWidth="240.0" text="Classification" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <Label layoutX="633.0" layoutY="6.0" prefHeight="55.0" prefWidth="142.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="LodeFormContent" layoutX="295.0" prefHeight="584.0" prefWidth="646.0" style="-fx-background-color: black;">
+         <children>
+            <BarChart alternativeColumnFillVisible="true" layoutX="4.0" layoutY="22.0" prefHeight="366.0" prefWidth="623.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </BarChart>
+            <Label layoutX="164.0" layoutY="487.0" text="Animals are divided into two main groups" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font></Label>
+            <Label layoutX="132.0" layoutY="463.0" text="Animals that have a backbone are called vertebrates" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font></Label>
+            <Label layoutX="106.0" layoutY="439.0" text="Animals that don't have a backbone are called invertebrates." textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font></Label>
+            <Label layoutX="105.0" layoutY="414.0" prefHeight="21.0" prefWidth="444.0" text="Vertebrates and invertebrates are divided into smaller groups." textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font></Label>
+            <Label layoutX="256.0" layoutY="378.0" prefHeight="17.0" prefWidth="142.0" text="Classification BarChart" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Hyperlink layoutX="173.0" layoutY="544.0" onAction="#hiperFood" text="Food" />
+            <Hyperlink layoutX="241.0" layoutY="544.0" onAction="#hiperHabitat" text="Habitat" />
+            <Hyperlink layoutX="317.0" layoutY="544.0" onAction="#hiperEndangered" text="Endangered" />
+            <Hyperlink layoutX="410.0" layoutY="544.0" onAction="#hiperKingdom" text="Kingdom" />
+            <Label layoutX="80.0" layoutY="518.0" prefHeight="17.0" prefWidth="492.0" text="For more details about animal classification, please refer to the hyperlink given below" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label alignment="TOP_CENTER" cacheShape="false" centerShape="false" contentDisplay="RIGHT" graphicTextGap="5.0" layoutX="94.0" layoutY="555.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="101.0" scaleShape="false" text="\@copyright-SoluTech" textFill="WHITE" underline="true">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

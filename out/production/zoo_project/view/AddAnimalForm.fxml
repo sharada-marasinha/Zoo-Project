@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="585.0" prefWidth="806.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddAnimalController">
+   <children>
+      <ImageView fitHeight="585.0" fitWidth="806.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/pikrepo.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="69.0" layoutY="-1.0" opacity="0.73" stroke="BLACK" strokeType="INSIDE" width="806.0" />
+      <Label layoutX="603.0" layoutY="6.0" prefHeight="55.0" prefWidth="168.0" text="Add Animal" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="436.0" layoutX="32.0" layoutY="97.0" opacity="0.73" stroke="BLACK" strokeType="INSIDE" width="364.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="408.0" layoutX="417.0" layoutY="144.0" opacity="0.73" stroke="BLACK" strokeType="INSIDE" width="364.0" />
+      <TextField layoutX="104.0" layoutY="177.0" prefHeight="32.0" prefWidth="213.0" promptText="ID">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="145.0" layoutY="102.0" prefHeight="55.0" prefWidth="143.0" text="Basic Details" textFill="WHITE" underline="true">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <TextField layoutX="104.0" layoutY="234.0" prefHeight="32.0" prefWidth="213.0" promptText="Name">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="103.0" layoutY="289.0" prefHeight="32.0" prefWidth="213.0" promptText="Age">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </TextField>
+      <RadioButton layoutX="104.0" layoutY="451.0" mnemonicParsing="false" text="Male" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="104.0" layoutY="494.0" mnemonicParsing="false" text="Female" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </RadioButton>
+      <ComboBox layoutX="495.0" layoutY="230.0" prefHeight="32.0" prefWidth="213.0" promptText="Select Type" />
+      <TextField layoutX="489.0" layoutY="85.0" prefHeight="39.0" prefWidth="245.0" promptText="         Search Animal ID" styleClass="edge-button" stylesheets="@../css/Butten.css">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="17.0" fitWidth="21.0" layoutX="500.0" layoutY="95.0" opacity="0.41" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-search-30.png" />
+         </image>
+      </ImageView>
+      <RadioButton layoutX="216.0" layoutY="494.0" mnemonicParsing="false" text="Pregnent" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="495.0" layoutY="355.0" mnemonicParsing="false" text="Endangered" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="611.0" layoutY="355.0" mnemonicParsing="false" text="Dangered" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="496.0" layoutY="408.0" mnemonicParsing="false" text="local" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="612.0" layoutY="408.0" mnemonicParsing="false" text="Foreign" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="517.0" layoutY="155.0" prefHeight="55.0" prefWidth="168.0" text="Advance Details" textFill="WHITE" underline="true">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="469.0" layoutY="488.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: green;" styleClass="edge-button" stylesheets="@../css/Butten.css" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="563.0" layoutY="488.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: blue;" styleClass="edge-button" stylesheets="@../css/Butten.css" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="663.0" layoutY="488.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: red;" styleClass="edge-button" stylesheets="@../css/Butten.css" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label contentDisplay="RIGHT" layoutX="13.0" layoutY="-2.0" prefHeight="69.0" prefWidth="426.0" text="Project Jaguar " textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="45.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/jaguar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Label alignment="TOP_CENTER" cacheShape="false" centerShape="false" contentDisplay="RIGHT" graphicTextGap="5.0" layoutX="29.0" layoutY="549.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="101.0" scaleShape="false" text="\@copyright-SoluTech" textFill="WHITE" underline="true">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <TextField layoutX="495.0" layoutY="290.0" prefHeight="32.0" prefWidth="213.0" promptText="Health Records">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </TextField>
+      <DatePicker layoutX="103.0" layoutY="399.0" prefHeight="32.0" prefWidth="213.0" promptText="Death Date" />
+      <DatePicker layoutX="103.0" layoutY="345.0" prefHeight="32.0" prefWidth="213.0" promptText="Born Date" />
+   </children>
+</AnchorPane>

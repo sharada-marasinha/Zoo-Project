@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="584.0" prefWidth="646.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.KingdomFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="518.0" layoutY="68.0" stroke="BLACK" strokeType="INSIDE" width="646.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="69.0" stroke="BLACK" strokeType="INSIDE" width="646.0" />
+      <Label layoutX="479.0" layoutY="10.0" prefHeight="55.0" prefWidth="140.0" text="Kingdom" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#03430f" height="489.0" layoutX="36.0" layoutY="80.0" opacity="0.46" stroke="BLACK" strokeType="INSIDE" width="572.0" />
+      <TableView layoutX="47.0" layoutY="93.0" mouseTransparent="true" prefHeight="460.0" prefWidth="550.0" styleClass="textPane" stylesheets="@../css/Table.css">
+         <columns>
+            <TableColumn prefWidth="115.0" text="Pisces" />
+            <TableColumn prefWidth="115.0" text="Amphibian" />
+            <TableColumn prefWidth="115.0" text="Reptilian" />
+            <TableColumn prefWidth="115.0" text="Aves" />
+            <TableColumn prefWidth="115.0" text="Mammalia" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>

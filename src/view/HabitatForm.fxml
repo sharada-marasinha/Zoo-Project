@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="584.0" prefWidth="646.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HabitatformController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="518.0" layoutY="68.0" stroke="BLACK" strokeType="INSIDE" width="646.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="69.0" stroke="BLACK" strokeType="INSIDE" width="646.0" />
+      <Label layoutX="515.0" layoutY="10.0" prefHeight="55.0" prefWidth="119.0" text="Habitat" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#03430f" height="479.0" layoutX="52.0" layoutY="82.0" opacity="0.31" stroke="BLACK" strokeType="INSIDE" width="536.0" />
+      <TableView layoutX="72.0" layoutY="107.0" prefHeight="433.0" prefWidth="496.0" styleClass="textPane" stylesheets="@../css/Table.css">
+         <columns>
+            <TableColumn prefWidth="252.0" text="Local" />
+            <TableColumn prefWidth="243.0" text="Foreign" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

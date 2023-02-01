@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="584.0" prefWidth="646.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EndangeredFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="518.0" layoutY="68.0" stroke="BLACK" strokeType="INSIDE" width="646.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="69.0" stroke="BLACK" strokeType="INSIDE" width="646.0" />
+      <Label layoutX="446.0" layoutY="8.0" prefHeight="55.0" prefWidth="184.0" text="Endangered" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#03430f" height="481.0" layoutX="36.0" layoutY="78.0" opacity="0.61" stroke="BLACK" strokeType="INSIDE" width="574.0" />
+      <TableView layoutX="60.0" layoutY="102.0" prefHeight="433.0" prefWidth="523.0" styleClass="textPane" stylesheets="@../css/Table.css">
+         <columns>
+            <TableColumn prefWidth="264.0" text="Endangered" />
+            <TableColumn prefWidth="257.0" text="Not Endangered " />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
